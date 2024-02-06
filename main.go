@@ -70,6 +70,7 @@ func approveUser(w http.ResponseWriter, r *http.Request) {
 	RespondJSON(w, http.StatusCreated, nil)
 }
 
+
 func deleteUser(w http.ResponseWriter, r *http.Request) {
 	var body user
 	if err := ParseBody(r.Body, &body); err != nil {
